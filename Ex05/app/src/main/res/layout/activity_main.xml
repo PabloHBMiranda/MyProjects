@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/T1txt1"
+        android:textColor="#000"
+        android:fontFamily="@font/joynoted_demo"
+        android:layout_width="wrap_content"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:text="''CAMPO MINADO''"
+
+        />
+
+    <ImageView
+        android:id="@+id/bomba"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:src="@drawable/bomb"
+
+        />
+    <Button
+        android:id="@+id/T1btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/joynoted_demo"
+        android:layout_marginTop="550dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="JOGAR"
+        tools:ignore="InvalidId" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/T1btn1"
+        android:layout_marginTop="29dp"
+        android:layout_centerHorizontal="true"
+        android:text="DESENVOLVIDO POR:\nPABLO HB MIRANDA"
+        android:textColor="@color/black"
+        android:fontFamily="@font/joynoted_demo"/>
+
+</RelativeLayout>

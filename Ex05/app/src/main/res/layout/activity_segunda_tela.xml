@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_white"
+    tools:context=".SegundaTela">
+
+    <TextView
+        android:id="@+id/T2txt1"
+        android:textColor="@color/black"
+        android:fontFamily="@font/joynoted_demo"
+        android:layout_width="wrap_content"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:text="   ''CAMPO MINADO''\n ENCONTRE A BOMBA!"
+
+        />
+    <TextView
+        android:id="@+id/T2txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TENTATIVAS: "
+        android:textColor="@color/black"
+        android:fontFamily="@font/joynoted_demo"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        />
+
+    <include
+        layout="@layout/layout_botoeslinha1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"/>
+    <include
+        layout="@layout/layout_botoeslinha2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"/>
+    <include
+        layout="@layout/layout_botoeslinha3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"/>
+    <include
+        layout="@layout/layout_botoeslinha4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"/>
+    <include
+        layout="@layout/layout_botoeslinha5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"/>
+    <include
+        layout="@layout/layout_botoeslinha6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"/>
+    <include
+        layout="@layout/layout_botoeslinha7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"/>
+    <include
+        layout="@layout/layout_botoeslinha8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"/>
+</RelativeLayout>

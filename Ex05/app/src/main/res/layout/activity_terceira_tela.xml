@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TerceiraTela">
+
+    <TextView
+        android:id="@+id/T3txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/joynoted_demo"
+        android:text="        PARABÉNS\nVOCÊ CONSEGUIU!"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="255dp"
+        android:layout_height="298dp"
+        android:layout_below="@id/T3txt1"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/trofeu" />
+
+    <TextView
+        android:id="@+id/T3txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-----"
+        android:textColor="@color/black"
+        android:fontFamily="@font/joynoted_demo"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView"
+
+        />
+    <Button
+        android:id="@+id/T3btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:fontFamily="@font/joynoted_demo"
+        android:backgroundTint="@color/black"
+        android:layout_centerHorizontal="true"
+        android:text="FECHAR"
+        android:textSize="25dp"
+        />
+</RelativeLayout>
