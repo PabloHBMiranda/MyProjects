@@ -17,7 +17,7 @@ public class FragmentControler extends FragmentStatePagerAdapter {
         super(fm,comportamento);
     }
 
-    public void AddFragment(Fragment f, String nome){
+    public void addFragment(Fragment f, String nome){
         lista.add(f);
         nomes.add(nome);
     }
