@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:id="@+id/view"
+    tools:context=".SensorAct">
 
     <TextView
         android:id="@+id/titulo"
@@ -13,47 +14,27 @@
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aula 08 - Fragments"
+        android:text="Aula 08 - Sensores"
         android:textColor="@color/black"/>
 
     <TextView
-        android:id="@+id/text1"
-        android:layout_below="@id/titulo"
+        android:id="@+id/texto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
-        android:text="Fragment 2"
-        android:layout_marginTop="50dp"
-        android:textSize="30dp"
-        android:textColor="#9A0F0F"
-        />
-    <Button
-        android:id="@+id/btnSensor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sensor"
-        android:layout_centerInParent="true"/>
-
-    <Button
-        android:id="@+id/btn01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fragment 1"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@id/btn02"
-        android:layout_marginBottom="50dp"
+        android:textSize="20dp"
+        android:text="Agite para trocar de cor"
         />
 
     <Button
-        android:id="@+id/btn02"
+        android:id="@+id/voltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragment 2"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="Voltar"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
         />
-
-
 
 </RelativeLayout>
