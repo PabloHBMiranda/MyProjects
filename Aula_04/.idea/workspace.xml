@@ -9,19 +9,29 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0645a0de-08f0-43de-a95a-00601956d3d7" name="Changes" comment="" />
+    <list default="true" id="0645a0de-08f0-43de-a95a-00601956d3d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../BancoDados1/app/src/main/java/com/pablohbm/bancodados1/Controler/PokemonDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BancoDados1/app/src/main/java/com/pablohbm/bancodados1/Model/Pokemon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BancoDados1/app/src/main/res/layout/grupobtns.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aula7/app/src/main/java/com/example/aula7/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula7/app/src/main/java/com/example/aula7/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoAvaliativo-main" beforeDir="false" afterPath="$PROJECT_DIR$/../TrabalhoAvaliativo-main" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\pablo\.android\avd\Pixel_4_XL_API_22.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="2DowTyDUdmtTYg6dAEdCVUDtVGa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,6 +41,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">

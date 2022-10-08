@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.aula7.R;
+
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 "Não há que ser forte. Há que ser flexível."};
         //Efeitos Sonoros
         snd = new SoundPool(4, AudioManager.STREAM_MUSIC,8);
-        click = snd.load(MainActivity.this,R.raw.click, 3);
+        click = snd.load(MainActivity.this, R.raw.click, 3);
         //Musica
         musica = MediaPlayer.create(MainActivity.this,R.raw.musica);
         musica.start();
