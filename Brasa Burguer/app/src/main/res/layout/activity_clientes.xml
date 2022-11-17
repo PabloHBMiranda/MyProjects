@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Clientes">
+
+    <ImageView
+        android:id="@+id/imgCliente"
+        android:layout_width="103dp"
+        android:layout_height="86dp"
+        android:src="@drawable/iconburguer"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/edBuscaCliente"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jurademibold"
+        android:hint="BUSCAR CLIENTE:"
+        android:layout_below="@id/imgCliente"
+        android:layout_marginTop="15dp"
+    />
+
+    <ListView
+        android:id="@+id/listaClientes"
+        android:layout_width="wrap_content"
+        android:layout_height="420dp"
+        android:layout_below="@id/edBuscaCliente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnAddClientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listaClientes"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/jurademibold"
+        android:textSize="20dp"
+        android:text="ADICIONAR NOVO CLIENTE"
+        />
+
+    <Button
+        android:id="@+id/btnVoltarClientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAddClientes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/jurademibold"
+        android:textSize="20dp"
+        android:text="VOLTAR" />
+</RelativeLayout>
