@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddCliente">
+    tools:context="com.pablohbm.cliente.AddCliente">
 
     <ImageView
         android:id="@+id/img1Cliente"
@@ -31,6 +31,7 @@
         android:layout_below="@id/nome"
         android:layout_marginHorizontal="20dp"
         android:backgroundTint="@color/black"
+        android:maxLength="20"
         />
     <TextView
         android:id="@+id/telefone"
@@ -44,12 +45,12 @@
         android:layout_marginTop="25dp"
         />
     <EditText
+        android:id="@+id/edAddTelefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/telefone"
         android:layout_marginHorizontal="50dp"
         android:inputType="phone"
-        android:id="@+id/edAddTelefone"
         android:backgroundTint="@color/black"
         />
     <TextView
@@ -74,12 +75,13 @@
         />
 
     <LinearLayout
+        android:id="@+id/linearNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/edAddRua"
         android:orientation="horizontal"
         android:layout_marginTop="25dp"
-        android:id="@+id/linearNum">
+        >
         <TextView
             android:id="@+id/numCasa"
             android:layout_width="wrap_content"
@@ -92,6 +94,7 @@
 
         <EditText
             android:id="@+id/edAddNum"
+            android:inputType="number"
             android:layout_width="53dp"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/black"

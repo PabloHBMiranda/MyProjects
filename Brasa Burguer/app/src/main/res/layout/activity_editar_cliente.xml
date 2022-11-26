@@ -4,15 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditarCliente">
+    tools:context="com.pablohbm.cliente.EditarCliente">
 
     <ImageView
         android:id="@+id/img2Cliente"
         android:layout_width="213dp"
         android:layout_height="142dp"
-        android:src="@drawable/iconburguer"
         android:layout_centerHorizontal="true"
-        />
+        android:src="@drawable/iconburguer" />
+
+    <ImageView
+        android:id="@+id/btnExcluirCliente"
+        android:layout_width="43dp"
+        android:layout_height="33dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/lixo"
+        android:clickable="true"/>
     <TextView
         android:id="@+id/nome1"
         android:layout_width="wrap_content"
@@ -31,6 +40,7 @@
         android:layout_below="@id/nome1"
         android:layout_marginHorizontal="20dp"
         android:backgroundTint="@color/black"
+        android:enabled="false"
         />
     <TextView
         android:id="@+id/telefone1"
@@ -51,6 +61,7 @@
         android:layout_marginHorizontal="50dp"
         android:inputType="phone"
         android:backgroundTint="@color/black"
+        android:enabled="false"
         />
     <TextView
         android:id="@+id/rua1"
@@ -71,6 +82,7 @@
         android:layout_below="@id/rua1"
         android:layout_marginHorizontal="20dp"
         android:backgroundTint="@color/black"
+        android:enabled="false"
         />
 
     <LinearLayout
@@ -96,7 +108,9 @@
             android:layout_width="53dp"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/black"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:enabled="false"
+            />
     </LinearLayout>
     <TextView
         android:id="@+id/complemento1"
@@ -116,6 +130,7 @@
         android:layout_below="@id/complemento1"
         android:layout_marginHorizontal="20dp"
         android:backgroundTint="@color/black"
+        android:enabled="false"
         />
 
     <LinearLayout
@@ -149,25 +164,44 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnSalvarCliente"
+    <LinearLayout
+        android:id="@+id/linearEditBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_below="@id/edAddCompl1"
+        android:layout_centerInParent="true"
         android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="82dp"
-        android:backgroundTint="@color/black"
-        android:text="SALVAR"
-        android:textSize="20dp"
-        android:fontFamily="@font/jurademibold"
-        android:visibility="invisible"/>
+        >
+        <Button
+            android:id="@+id/btnSalvarCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="SALVAR"
+            android:textSize="20dp"
+            android:fontFamily="@font/jurademibold"
+            android:visibility="invisible"
+            android:enabled="false"/>
+        <Button
+            android:id="@+id/btnCancelarCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="CANCELAR"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/jurademibold"
+            android:visibility="invisible"
+            android:enabled="false"/>
+    </LinearLayout>
     <TextView
         android:id="@+id/erroAdd1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#D80808"
         android:text="*Campo Vazio"
-        android:layout_below="@id/btnSalvarCliente"
+        android:layout_below="@id/linearButtons1"
         android:textSize="23dp"
         android:visibility="invisible"
         android:layout_marginTop="10dp"
