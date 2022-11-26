@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/forca"
+        android:layout_width="205dp"
+        android:layout_height="305dp"
+        android:src="@drawable/FORCA"
+        />
+
+    <ImageView
+        android:id="@+id/cabeca"
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="153.5dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/cabeca"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/tronco"
+        android:layout_width="46dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="151.5dp"
+        android:layout_marginTop="101.6dp"
+        android:src="@drawable/tronco"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/bdireito"
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/bdireito"
+        android:visibility="invisible"
+        />
+    <ImageView
+        android:id="@+id/besquerdo"
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/Besquerdo"
+        android:layout_marginLeft="146dp"
+        android:layout_marginTop="110dp"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/pesquerdo"
+        android:layout_width="34dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="155dp"
+        android:src="@drawable/Pesquerdo"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/pdireito"
+        android:layout_width="41dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="167dp"
+        android:layout_marginTop="153dp"
+        android:src="@drawable/Pdireito"
+        android:visibility="invisible"
+        />
+</RelativeLayout>
