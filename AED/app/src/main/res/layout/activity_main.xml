@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOGO DA FORCA"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textSize="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="266dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/titulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/jogar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="(1) JOGADOR"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/jogar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:text="(2) JOGADORES"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/ultimasPalavras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:text="ULTIMAS PALAVRAS"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:text="INFO"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/encerrarMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:text="ENCERRAR"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
