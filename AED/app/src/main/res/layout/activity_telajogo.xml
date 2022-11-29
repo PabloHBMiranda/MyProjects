@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="170dp"
             android:hint="LETRA"
-            android:inputType="text"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:maxLength="1"
             android:textAlignment="center" />
 
@@ -91,7 +91,7 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="10dp"
             android:hint="PALAVRA"
-            android:inputType="text"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:textAlignment="center" />
 
         <Button
