@@ -12,12 +12,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
+
         <include
             android:id="@+id/forcaJogo2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             layout="@layout/forcaimagem"
-            />
+            android:layout_width="178dp"
+            android:layout_height="186dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +39,7 @@
             <ListView
                 android:id="@+id/listaJogo"
                 android:layout_width="match_parent"
-                android:layout_height="201dp"
+                android:layout_height="123dp"
                 android:background="#43090000" />
         </LinearLayout>
 
@@ -57,21 +58,22 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30dp" />
+
     <LinearLayout
         android:id="@+id/lyLocalJogar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/palavraJogo"
+        android:layout_centerInParent="true"
         android:layout_marginTop="10dp"
         android:orientation="vertical">
 
         <EditText
             android:id="@+id/edLetra"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="170dp"
+            android:layout_marginHorizontal="100dp"
             android:hint="LETRA"
-            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:maxLength="1"
             android:textAlignment="center" />
 
@@ -91,7 +93,6 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="10dp"
             android:hint="PALAVRA"
-            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:textAlignment="center" />
 
         <Button

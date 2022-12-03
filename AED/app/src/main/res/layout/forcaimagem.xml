@@ -5,27 +5,25 @@
 
     <ImageView
         android:id="@+id/forca"
-        android:layout_width="205dp"
-        android:layout_height="305dp"
-        android:src="@drawable/FORCA"
-        />
+        android:layout_width="178dp"
+        android:layout_height="186dp"
+        android:src="@drawable/forca" />
 
     <ImageView
         android:id="@+id/cabeca"
         android:layout_width="40dp"
         android:layout_height="38dp"
-        android:layout_marginLeft="153.5dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginLeft="126.5dp"
+        android:layout_marginTop="46dp"
         android:src="@drawable/cabeca"
-        android:visibility="invisible"
-        />
+        android:visibility="invisible" />
 
     <ImageView
         android:id="@+id/tronco"
         android:layout_width="46dp"
         android:layout_height="78dp"
-        android:layout_marginLeft="151.5dp"
-        android:layout_marginTop="101.6dp"
+        android:layout_marginLeft="124.5dp"
+        android:layout_marginTop="67dp"
         android:src="@drawable/tronco"
         android:visibility="invisible"
         />
@@ -34,8 +32,8 @@
         android:id="@+id/bdireito"
         android:layout_width="34dp"
         android:layout_height="31dp"
-        android:layout_marginLeft="168dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="78dp"
         android:src="@drawable/bdireito"
         android:visibility="invisible"
         />
@@ -43,9 +41,9 @@
         android:id="@+id/besquerdo"
         android:layout_width="34dp"
         android:layout_height="31dp"
-        android:src="@drawable/Besquerdo"
-        android:layout_marginLeft="146dp"
-        android:layout_marginTop="110dp"
+        android:src="@drawable/besquerdo"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="78dp"
         android:visibility="invisible"
         />
 
@@ -53,9 +51,9 @@
         android:id="@+id/pesquerdo"
         android:layout_width="34dp"
         android:layout_height="52dp"
-        android:layout_marginLeft="144dp"
-        android:layout_marginTop="155dp"
-        android:src="@drawable/Pesquerdo"
+        android:layout_marginLeft="116.9dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/pesquerdo"
         android:visibility="invisible"
         />
 
@@ -63,9 +61,9 @@
         android:id="@+id/pdireito"
         android:layout_width="41dp"
         android:layout_height="58dp"
-        android:layout_marginLeft="167dp"
-        android:layout_marginTop="153dp"
-        android:src="@drawable/Pdireito"
+        android:layout_marginLeft="139.9dp"
+        android:layout_marginTop="116dp"
+        android:src="@drawable/pdireito"
         android:visibility="invisible"
         />
 </RelativeLayout>

@@ -3,13 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/AED/app/src/main/res/layout/activity_game_over.xml" value="0.25" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/AED/app/src/main/res/layout/activity_info.xml" value="0.25" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/AED/app/src/main/res/layout/activity_jogar.xml" value="0.25" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/AED/app/src/main/res/layout/activity_jogar2.xml" value="0.25" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/AED/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/AED/app/src/main/res/layout/activity_tela_jogo2.xml" value="0.25" />
         <entry key="..\:/Users/pablo/AndroidStudioProjects/AED/app/src/main/res/layout/activity_telajogo.xml" value="0.25" />
-        <entry key="..\:/Users/pablo/AndroidStudioProjects/AED/app/src/main/res/layout/forcaimagem.xml" value="0.264" />
+        <entry key="..\:/Users/pablo/AndroidStudioProjects/AED/app/src/main/res/layout/forcaimagem.xml" value="0.4" />
       </map>
     </option>
   </component>

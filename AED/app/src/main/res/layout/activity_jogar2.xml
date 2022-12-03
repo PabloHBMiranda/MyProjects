@@ -13,7 +13,7 @@
         android:hint="INSIRA A PALAVRA"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="250dp"
-        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZÇ "
         />
     <EditText
         android:id="@+id/edDica"

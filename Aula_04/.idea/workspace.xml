@@ -10,10 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0645a0de-08f0-43de-a95a-00601956d3d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../BancoDados1/app/src/main/java/com/pablohbm/bancodados1/Controler/PokemonDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BancoDados1/app/src/main/java/com/pablohbm/bancodados1/Model/Pokemon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BancoDados1/app/src/main/res/layout/grupobtns.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Aula7/app/src/main/java/com/example/aula7/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Aula7/app/src/main/java/com/example/aula7/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AED/app/src/main/java/com/pablohbm/aed/TelaJogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AED/app/src/main/java/com/pablohbm/aed/TelaJogo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TrabalhoAvaliativo-main" beforeDir="false" afterPath="$PROJECT_DIR$/../TrabalhoAvaliativo-main" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
