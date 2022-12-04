@@ -11,7 +11,7 @@
         android:id="@+id/infos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DESENVOLVIDO POR:\nPABLO HENRIQUE BORGES MIRANDA\nTRABALHO AED: JOGO DA FORCA"
+        android:text="DESENVOLVIDO POR:\nPABLO HENRIQUE BORGES MIRANDA\nTRABALHO AED: JOGO DA FORCA."
         android:layout_centerInParent="true"
         android:textSize="20dp"
         android:textColor="@color/black"

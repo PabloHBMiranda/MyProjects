@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Jogar2 extends AppCompatActivity {
 
@@ -34,10 +35,18 @@ public class Jogar2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(!edDica.getText().equals("") && !edPalavra.getText().equals("")){
-
+                    Intent i = new Intent(Jogar2.this, TelaJogo.class);
+                    String jogo2Palavra = edPalavra.getText().toString();
+                    String jogo2Dica = edDica.getText().toString();
+                    int opc = 1;
+                    i.putExtra("PALAVRA", jogo2Palavra);
+                    i.putExtra("DICA", jogo2Dica);
+                    i.putExtra("OPC",opc);
+                    startActivity(i);
+                    finish();
                 }
                 else{
-
+                    Toast.makeText(Jogar2.this, "Campo Vazio", Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -38,7 +38,7 @@ public class TelaJogo extends AppCompatActivity {
         return possuiLetra;
     }
 
-   public int MudaForca() {
+    public int MudaForca() {
         if (erros == 0) {
             cabeca.setVisibility(View.VISIBLE);
             erros++;
@@ -75,7 +75,7 @@ public class TelaJogo extends AppCompatActivity {
     ListView listaJogo;
     ImageView cabeca, tronco, bdireito, besquerdo, pesquerdo, pdireito, forca;
     TextView palavraJogo;
-    String palavraJogada = "", palavraTela="";
+    String palavraJogada = "", palavraTela = "";
     String dicaJogada = "";
     int i, erros = 0;
     ArrayList listaLetras = new ArrayList();
@@ -110,26 +110,34 @@ public class TelaJogo extends AppCompatActivity {
         forca = findViewById(R.id.forca);
         //boneco
 
+        Intent receberDados = getIntent();
 
-        Random r = new Random();
-        int x = r.nextInt(10);
-        sorteioPalavras = new String[]
-                {"MOUSE", "CADEIRA", "CABELO", "ANTENA", "OLEO MOTOR", "PAO DE HAMBURGUER", "PERFUME", "AÇAI", "BOMBA DE GASOLINA", "QUADRA DE FUTEBOL"};
-        palavraJogada = sorteioPalavras[x];
-        sorteioDicas = new String[]
-                {"Tem pra computador e pra um desenho ai chamado T e J.",
-                 "Você pode estar em cima dela nesse momento.",
-                 "Você concerteza tem, mas não em todos os lugares de VOCÊ.",
-                 "As 'coisas' chegam por ela, tem em cima das casas ou não.",
-                 "Deixa o carro bem 'lisinho'.",
-                 "Ele completa a felicidade, pois está acima e abaixo ao mesmo tempo.",
-                 "Muito conhecido por melhorar o 'ambiente' da França.",
-                 "Já foi patente JAPONESA, como é que pode isso?",
-                 "Nós brasileiros não gostamos muito de colocar isso, por conta do alto custo, mas é necessário para andarmos grandes distâncias.",
-                 "O bagulho é COPA, mas em proporções reduzidas."};
-        dicaJogada = sorteioDicas[x];
+        int opc;
+        opc = receberDados.getIntExtra("OPC", 0);
 
-
+        if (opc == 0) {
+            Random r = new Random();
+            int x = r.nextInt(10);
+            sorteioPalavras = new String[]
+                    {"MOUSE", "CADEIRA", "CABELO", "ANTENA", "OLEO MOTOR", "PAO DE HAMBURGUER", "PERFUME", "AÇAI", "BOMBA DE GASOLINA", "QUADRA DE FUTEBOL"};
+            palavraJogada = sorteioPalavras[x];
+            sorteioDicas = new String[]
+                    {"Tem pra computador e pra um desenho ai chamado T e J.",
+                            "Você pode estar em cima dela nesse momento.",
+                            "Você concerteza tem, mas não em todos os lugares de VOCÊ.",
+                            "As 'coisas' chegam por ela, tem em cima das casas ou não.",
+                            "Deixa o carro bem 'lisinho'.",
+                            "Ele completa a felicidade, pois está acima e abaixo ao mesmo tempo.",
+                            "Muito conhecido por melhorar o 'ambiente' da França.",
+                            "Já foi patente JAPONESA, como é que pode isso?",
+                            "Nós brasileiros não gostamos muito de colocar isso, por conta do alto custo, mas é necessário para andarmos grandes distâncias.",
+                            "O bagulho é COPA, mas em proporções reduzidas."};
+            dicaJogada = sorteioDicas[x];
+        }
+        else{
+            palavraJogada = receberDados.getStringExtra("PALAVRA").toUpperCase();
+            dicaJogada = receberDados.getStringExtra("DICA");
+        }
 
         for (i = 0; i < palavraJogada.length(); i++) {
             if (' ' == (palavraJogada.charAt(i))) {
@@ -173,6 +181,12 @@ public class TelaJogo extends AppCompatActivity {
                     String jogouLetra = edLetra.getText().toString().toUpperCase();
                     if (TesteLetra(jogouLetra) == 1) {
                         palavraJogo.setText(palavraTela);
+                        if (palavraTela.equals(palavraJogada
+                        )) {
+                            Intent i = new Intent(TelaJogo.this, Venceu.class);
+                            startActivity(i);
+                            finish();
+                        }
                         edLetra.setText("");
                     } else {
                         jogadasErradas.add(jogouLetra);
@@ -193,24 +207,23 @@ public class TelaJogo extends AppCompatActivity {
         btnPalavra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!edjogoPalavra.getText().toString().equals("")){
+                if (!edjogoPalavra.getText().toString().equals("")) {
                     String jogouPalavra = edjogoPalavra.getText().toString().toUpperCase();
-                    if(jogouPalavra.equals(palavraJogada)){
-                        Toast.makeText(TelaJogo.this, "GANHOU!", Toast.LENGTH_SHORT).show();
-                        edjogoPalavra.setText("");
-                    }
-                    else{
+                    if (jogouPalavra.equals(palavraJogada)) {
+                        Intent i = new Intent(TelaJogo.this, Venceu.class);
+                        startActivity(i);
+                        finish();
+                    } else {
                         jogadasErradas.add(jogouPalavra);
                         adapter.notifyDataSetChanged();
-                        if(MudaForca()>5){
+                        if (MudaForca() > 5) {
                             Intent i = new Intent(TelaJogo.this, GameOver.class);
                             startActivity(i);
                             finish();
                         }
                         edjogoPalavra.setText("");
                     }
-                }
-                else{
+                } else {
                     Toast.makeText(TelaJogo.this, "Campo Vazio", Toast.LENGTH_SHORT).show();
                 }
             }
