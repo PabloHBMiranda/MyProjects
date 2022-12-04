@@ -181,9 +181,9 @@ public class TelaJogo extends AppCompatActivity {
                     String jogouLetra = edLetra.getText().toString().toUpperCase();
                     if (TesteLetra(jogouLetra) == 1) {
                         palavraJogo.setText(palavraTela);
-                        if (palavraTela.equals(palavraJogada
-                        )) {
+                        if (palavraTela.equals(palavraJogada)) {
                             Intent i = new Intent(TelaJogo.this, Venceu.class);
+                            i.putExtra("PALAVRA",palavraJogada);
                             startActivity(i);
                             finish();
                         }
@@ -192,7 +192,8 @@ public class TelaJogo extends AppCompatActivity {
                         jogadasErradas.add(jogouLetra);
                         adapter.notifyDataSetChanged();
                         if (MudaForca() > 5) {
-                            Intent i = new Intent(TelaJogo.this, GameOver.class);
+                            Intent i = new Intent(TelaJogo.this, Venceu.class);
+                            i.putExtra("PALAVRA",palavraJogada);
                             startActivity(i);
                             finish();
                         }
@@ -211,13 +212,15 @@ public class TelaJogo extends AppCompatActivity {
                     String jogouPalavra = edjogoPalavra.getText().toString().toUpperCase();
                     if (jogouPalavra.equals(palavraJogada)) {
                         Intent i = new Intent(TelaJogo.this, Venceu.class);
+                        i.putExtra("PALAVRA",palavraJogada);
                         startActivity(i);
                         finish();
                     } else {
                         jogadasErradas.add(jogouPalavra);
                         adapter.notifyDataSetChanged();
                         if (MudaForca() > 5) {
-                            Intent i = new Intent(TelaJogo.this, GameOver.class);
+                            Intent i = new Intent(TelaJogo.this, Venceu.class);
+                            i.putExtra("PALAVRA",palavraJogada);
                             startActivity(i);
                             finish();
                         }
