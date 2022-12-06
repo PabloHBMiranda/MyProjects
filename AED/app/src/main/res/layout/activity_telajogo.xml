@@ -109,11 +109,22 @@
         android:id="@+id/menuJogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MENU"
         android:layout_below="@id/lyLocalJogar"
         android:layout_centerInParent="true"
         android:layout_marginTop="20dp"
-        android:textColor="@color/white"
         android:backgroundTint="@color/black"
+        android:text="MENU"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/ultimaPalavra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ULTIMA PALAVRA: "
+        android:layout_below="@id/menuJogo"
+        android:layout_centerInParent="true"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
         />
 </RelativeLayout>

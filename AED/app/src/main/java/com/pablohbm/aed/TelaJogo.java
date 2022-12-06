@@ -3,7 +3,9 @@ package com.pablohbm.aed;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
@@ -22,6 +24,9 @@ import android.widget.Toast;
 
 public class TelaJogo extends AppCompatActivity {
 
+    public static final String MyPREFERENCES = "MyPrefs" ;
+    public final String plv = "plvKey";
+    public static final int jogou = 0;
     public int TesteLetra(String letraEditText) {
         char letra = letraEditText.charAt(0);
         int possuiLetra = 0;
@@ -74,8 +79,8 @@ public class TelaJogo extends AppCompatActivity {
     Button btnLetra, btnPalavra, menuJogo, btnDica;
     ListView listaJogo;
     ImageView cabeca, tronco, bdireito, besquerdo, pesquerdo, pdireito, forca;
-    TextView palavraJogo;
-    String palavraJogada = "", palavraTela = "";
+    TextView palavraJogo, ultimaPalavra;
+    String palavraJogada = "", palavraTela = "", ultimaPlv;
     String dicaJogada = "";
     int i, erros = 0;
     ArrayList listaLetras = new ArrayList();
@@ -96,9 +101,13 @@ public class TelaJogo extends AppCompatActivity {
         btnDica = findViewById(R.id.jogoDica);
         listaJogo = findViewById(R.id.listaJogo);
         palavraJogo = findViewById(R.id.palavraJogo);
+        ultimaPalavra = findViewById(R.id.ultimaPalavra);
 
         adapter = new ArrayAdapter(TelaJogo.this, android.R.layout.simple_list_item_1, jogadasErradas);
         listaJogo.setAdapter(adapter);
+
+        SharedPreferences pref = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        SharedPreferences.Editor ed = pref.edit();
 
         //boneco
         cabeca = findViewById(R.id.cabeca);
@@ -110,10 +119,14 @@ public class TelaJogo extends AppCompatActivity {
         forca = findViewById(R.id.forca);
         //boneco
 
+        ultimaPlv = pref.getString(plv,"");
+        ultimaPalavra.setText("ULTIMA PALAVRA: " + ultimaPlv);
+
         Intent receberDados = getIntent();
 
         int opc;
         opc = receberDados.getIntExtra("OPC", 0);
+
 
         if (opc == 0) {
             Random r = new Random();
@@ -137,7 +150,11 @@ public class TelaJogo extends AppCompatActivity {
         else{
             palavraJogada = receberDados.getStringExtra("PALAVRA").toUpperCase();
             dicaJogada = receberDados.getStringExtra("DICA");
+
         }
+
+
+
 
         for (i = 0; i < palavraJogada.length(); i++) {
             if (' ' == (palavraJogada.charAt(i))) {
@@ -182,6 +199,8 @@ public class TelaJogo extends AppCompatActivity {
                     if (TesteLetra(jogouLetra) == 1) {
                         palavraJogo.setText(palavraTela);
                         if (palavraTela.equals(palavraJogada)) {
+                            ed.putString(plv, palavraJogada);
+                            ed.apply();
                             Intent i = new Intent(TelaJogo.this, Venceu.class);
                             i.putExtra("PALAVRA",palavraJogada);
                             startActivity(i);
@@ -192,6 +211,8 @@ public class TelaJogo extends AppCompatActivity {
                         jogadasErradas.add(jogouLetra);
                         adapter.notifyDataSetChanged();
                         if (MudaForca() > 5) {
+                            ed.putString(plv, palavraJogada);
+                            ed.apply();
                             Intent i = new Intent(TelaJogo.this, Venceu.class);
                             i.putExtra("PALAVRA",palavraJogada);
                             startActivity(i);
@@ -211,6 +232,8 @@ public class TelaJogo extends AppCompatActivity {
                 if (!edjogoPalavra.getText().toString().equals("")) {
                     String jogouPalavra = edjogoPalavra.getText().toString().toUpperCase();
                     if (jogouPalavra.equals(palavraJogada)) {
+                        ed.putString(plv, palavraJogada);
+                        ed.apply();
                         Intent i = new Intent(TelaJogo.this, Venceu.class);
                         i.putExtra("PALAVRA",palavraJogada);
                         startActivity(i);
@@ -219,6 +242,8 @@ public class TelaJogo extends AppCompatActivity {
                         jogadasErradas.add(jogouPalavra);
                         adapter.notifyDataSetChanged();
                         if (MudaForca() > 5) {
+                            ed.putString(plv, palavraJogada);
+                            ed.apply();
                             Intent i = new Intent(TelaJogo.this, Venceu.class);
                             i.putExtra("PALAVRA",palavraJogada);
                             startActivity(i);

@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button jogar1, jogar2, encerrar, info;
+    Button jogar1, jogar2, encerrar, info, ultimaPalavra;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

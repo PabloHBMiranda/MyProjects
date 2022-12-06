@@ -43,15 +43,6 @@
             android:textSize="20dp" />
 
         <Button
-            android:id="@+id/ultimasPalavras"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@color/black"
-            android:text="ULTIMAS PALAVRAS"
-            android:textSize="20dp" />
-
-        <Button
             android:id="@+id/info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
