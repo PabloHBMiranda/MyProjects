@@ -132,7 +132,7 @@ public class TelaJogo extends AppCompatActivity {
             Random r = new Random();
             int x = r.nextInt(10);
             sorteioPalavras = new String[]
-                    {"MOUSE", "CADEIRA", "CABELO", "ANTENA", "OLEO MOTOR", "PAO DE HAMBURGUER", "PERFUME", "AÇAI", "BOMBA DE GASOLINA", "QUADRA DE FUTEBOL"};
+                    {"MOUSE", "CADEIRA", "CABELO", "ANTENA", "OLEO MOTOR", "PAO DE HAMBURGUER", "PERFUME", "AÇAI", "GASOLINA", "QUADRA DE FUTEBOL"};
             palavraJogada = sorteioPalavras[x];
             sorteioDicas = new String[]
                     {"Tem pra computador e pra um desenho ai chamado T e J.",
@@ -213,7 +213,7 @@ public class TelaJogo extends AppCompatActivity {
                         if (MudaForca() > 5) {
                             ed.putString(plv, palavraJogada);
                             ed.apply();
-                            Intent i = new Intent(TelaJogo.this, Venceu.class);
+                            Intent i = new Intent(TelaJogo.this, GameOver.class);
                             i.putExtra("PALAVRA",palavraJogada);
                             startActivity(i);
                             finish();
@@ -244,7 +244,7 @@ public class TelaJogo extends AppCompatActivity {
                         if (MudaForca() > 5) {
                             ed.putString(plv, palavraJogada);
                             ed.apply();
-                            Intent i = new Intent(TelaJogo.this, Venceu.class);
+                            Intent i = new Intent(TelaJogo.this, GameOver.class);
                             i.putExtra("PALAVRA",palavraJogada);
                             startActivity(i);
                             finish();

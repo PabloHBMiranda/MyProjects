@@ -6,20 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".Venceu">
 
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="273dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/venceu"
+        android:layout_marginTop="10dp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_centerInParent="true"
         android:layout_marginHorizontal="20dp"
-        >
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="VOCÊ GANHOU!"
             android:textColor="@color/black"
-            android:textSize="20dp"
-            />
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/txtVenceu"
@@ -33,10 +39,9 @@
             android:id="@+id/venceuMenu"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="MENU"
             android:backgroundTint="@color/black"
-            android:textSize="20dp"
-            />
+            android:text="MENU"
+            android:textSize="20dp" />
     </LinearLayout>
 
 </RelativeLayout>
