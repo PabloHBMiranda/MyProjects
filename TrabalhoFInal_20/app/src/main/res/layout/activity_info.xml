@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Info">
+
+    <TextView
+        android:id="@+id/infosTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/pokemonsolid"
+        android:text="Aluno: Pablo H. Borges Miranda\nMatrícula: 2021.2012.0000-49"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/voltarInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOLTAR"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/pokemonsolid"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_below="@id/infosTexto"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

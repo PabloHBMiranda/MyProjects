@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".ConcluindoPedido">
+
+    <TextView
+        android:id="@+id/concPed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/pokemonsolid"
+        android:text="CONCLUIR PEDIDO" />
+
+    <LinearLayout
+        android:id="@+id/layoutEndConcPed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/concPed"
+        android:layout_marginHorizontal="10dp"
+        android:background="#6DD4D8D8"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/rua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RUA" />
+
+        <EditText
+            android:id="@+id/bairro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="BAIRRO" />
+
+        <EditText
+            android:id="@+id/n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="N°" />
+
+        <EditText
+            android:id="@+id/cep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CEP: 00000-00" />
+
+        <EditText
+            android:id="@+id/comple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="COMPLEMENTO" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/layoutEndConcPed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/btnConcPed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONCLUIR"
+            android:fontFamily="@font/pokemonsolid"
+            android:backgroundTint="@color/black"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/btnVoltarConcPed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pokemonsolid"
+            android:backgroundTint="@color/black"
+            android:text="VOLTAR" />
+    </LinearLayout>
+
+</RelativeLayout>

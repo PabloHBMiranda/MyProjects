@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".FazerPedidos">
+
+    <TextView
+        android:id="@+id/nomeDaObra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/pokemonsolid"
+        android:text="NOME DA OBRA"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imagemDoPedido"
+        android:layout_width="247dp"
+        android:layout_height="223dp"
+        android:layout_below="@id/nomeDaObra"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/pokemon" />
+
+    <TextView
+        android:id="@+id/descricaoObra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagemDoPedido"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pokemonsolid"
+        android:text="“BulbaTree” trata-se de uma narrativa. A obra conta uma história através da imagem, capturando o instante no qual a vida Pokemon está prestes a mudar.\nDimensões: 82 × 114\nTécnica: Óleo sobre tela"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VALOR: R$ 119,90"
+        android:layout_below="@id/descricaoObra"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pokemonsolid"
+        android:textSize="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descricaoObra"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/comprarFazerPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/pokemonsolid"
+            android:text="COMPRAR" />
+
+        <Button
+            android:id="@+id/voltarFazerPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/pokemonsolid"
+            android:text="VOLTAR" />
+    </LinearLayout>
+
+</RelativeLayout>
