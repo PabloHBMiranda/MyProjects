@@ -7,12 +7,23 @@
     android:background="@drawable/fundo"
     tools:context=".ConcluindoPedido">
 
+
+    <TextView
+        android:id="@+id/numped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/pokemonsolid"
+        android:text="N° PEDIDO:" />
     <TextView
         android:id="@+id/concPed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/numped"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="40dp"
         android:textColor="@color/black"
         android:fontFamily="@font/pokemonsolid"
         android:text="CONCLUIR PEDIDO" />
@@ -39,16 +50,18 @@
             android:hint="BAIRRO" />
 
         <EditText
-            android:id="@+id/n"
+            android:id="@+id/num"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="N°" />
+            android:hint="N°"
+            android:inputType="number"/>
 
         <EditText
             android:id="@+id/cep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="CEP: 00000-00" />
+            android:hint="CEP: 00000-00"
+            android:inputType="number"/>
 
         <EditText
             android:id="@+id/comple"
