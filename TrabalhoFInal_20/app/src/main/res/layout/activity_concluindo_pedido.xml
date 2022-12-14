@@ -41,12 +41,14 @@
             android:id="@+id/rua"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="invisible"
             android:hint="RUA" />
 
         <EditText
             android:id="@+id/bairro"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:visibility="invisible"
             android:hint="BAIRRO" />
 
         <EditText
@@ -54,6 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="N°"
+            android:visibility="invisible"
             android:inputType="number"/>
 
         <EditText
@@ -67,14 +70,27 @@
             android:id="@+id/comple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="invisible"
             android:hint="COMPLEMENTO" />
     </LinearLayout>
+    <Button
+        android:id="@+id/buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUSCAR"
+        android:layout_below="@id/layoutEndConcPed"
+        android:fontFamily="@font/pokemonsolid"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginRight="10dp"
+        />
     <LinearLayout
         android:layout_below="@id/layoutEndConcPed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
         android:layout_centerHorizontal="true"
         >
 

@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
             bancoDados = openOrCreateDatabase("AppPokemonQD", MODE_PRIVATE, null);
             bancoDados.execSQL("CREATE TABLE IF NOT EXISTS pedido(rua VARCHAR)");
             bancoDados.close();
-            trabalho.setText("AALALALA");
 
         }
         catch (Exception e){

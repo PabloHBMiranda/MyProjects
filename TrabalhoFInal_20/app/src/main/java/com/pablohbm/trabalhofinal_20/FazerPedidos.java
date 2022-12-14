@@ -56,6 +56,7 @@ public class FazerPedidos extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(FazerPedidos.this, ConcluindoPedido.class);
+                i.putExtra("opc", opc);
                 startActivity(i);
                 finish();
             }

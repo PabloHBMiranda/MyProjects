@@ -4,11 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fundo"
     tools:context=".PedidosFeitos">
+
+    <TextView
+        android:id="@+id/infoLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LISTA DE PEDIDOS FEITOS"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:fontFamily="@font/pokemonsolid"
+        />
     <ListView
         android:id="@+id/listaDePedidos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/infoLista"
+        android:layout_above="@id/btnPedidoFeitosVoltar"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         />
 
     <Button
@@ -16,6 +32,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_marginBottom="100dp"
+        android:text="VOLTAR"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/pokemonsolid"
+        android:layout_alignParentBottom="true"
         />
 
 </RelativeLayout>
